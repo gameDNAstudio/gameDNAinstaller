@@ -32,9 +32,10 @@ bool FGameDNAinstallerCore::InstallPlugin(TSharedRef<FGameDNAinstallerPlugin> Pl
 		if (Plugin.IsValid())
 		{
 			FString PluginDir = IPluginManager::Get().FindPlugin(TEXT("GameDNAinstaller"))->GetBaseDir();
+			FString EngineDir = FPaths::EngineDir();
 
 			FString ProcessPath = FPaths::ConvertRelativePathToFull(PluginDir + TEXT("/Extras/Core/GameDNAinstaller.exe"));
-			FString CommandLine = FString("\"") + PluginEntry->Id + FString("\" \"") + PluginEntry->Name + FString("\" \"") + Plugin->GetDescriptor().VersionName + FString("\" \"") + FPaths::ConvertRelativePathToFull(Plugin->GetBaseDir()) + FString("\" ") + FString::FromInt(PluginEntry->Revision);
+			FString CommandLine = FString("\"") + PluginEntry->Id + FString("\" \"") + PluginEntry->Name + FString("\" \"") + Plugin->GetDescriptor().VersionName + FString("\" \"") + FPaths::ConvertRelativePathToFull(Plugin->GetBaseDir()) + FString("\" \"") + FPaths::ConvertRelativePathToFull(EngineDir) + FString("\" ") + FString::FromInt(PluginEntry->Revision);
 			
 #if PLATFORM_MAC
 			FString CmdExe = TEXT("/bin/sh");
