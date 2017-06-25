@@ -1,0 +1,32 @@
+{
+  "FileVersion": 3,
+  "Version": 1,
+  "VersionName": "1.0.0",
+  "FriendlyName": "gameDNA installer",
+  "Description": "SDK installer for gameDNA's plugins",
+  "Category": "Misc",
+  "CreatedBy": "gameDNA Ltd",
+  "CreatedByURL": "http://gamednastudio.com",
+  "DocsURL": "http://gamednastudio.com/plugins/docs/gameDNAinstaller_UserGuide.pdf",
+  "MarketplaceURL": "",
+  "EngineVersion": "4.16.0",
+  "SupportURL": "mailto:support@gamednastudio.com",
+  "Modules": [
+	  {
+		"Name": "gameDNAinstaller",
+		"Type": "Editor",
+		"LoadingPhase": "Default",
+		"WhitelistPlatforms": [
+		  "Win64",
+		  "Win32",
+		  "Linux",
+		  "Mac"
+		]
+	  }
+  ],
+  "EnabledByDefault": true,
+  "CanContainContent": false,
+  "IsBetaVersion": false,
+  "Installed": true,
+  "RequiresBuildPlatform": false
+}
