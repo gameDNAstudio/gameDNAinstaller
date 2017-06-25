@@ -18,9 +18,7 @@
 ## User Guide
 More info about plugin and installation instructions you can find in [User Guide](Documentation/gameDNAinstaller_UserGuide.pdf).
 
-***
-
-### GETTING STARTED:
+## Getting Started:
 
 1. Unpack the plugin archive to the _Plugins_ folder in your UE4 project folder (for project plugins) or _Engine/Plugins/Marketplace_ (for engine plugins) and start the editor.
 
