@@ -9,11 +9,11 @@
 * **Required Unreal Engine 4.16 or above.**
 
 ## Features
-* Automatic SDK downloader and installer
-* Updating SDK from the cloud
-* No more downloading and creating packages on your own
-* Just one click and it will do everything for you
-* Out-of-the-box for Windows, macOS, and Linux
+* Automatic SDK downloader and installer.
+* Updating SDK from the cloud.
+* No more downloading and creating packages on your own.
+* Just one click and it will do everything for you.
+* Out-of-the-box for Windows, macOS, and Linux.
 
 ## User Guide
 More info about plugin and installation instructions you can find in [User Guide](Documentation/gameDNAinstaller_UserGuide.pdf).
