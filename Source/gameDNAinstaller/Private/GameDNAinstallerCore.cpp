@@ -242,54 +242,65 @@ EGameDNAInstallerPluginState FGameDNAinstallerCore::ProcessPluginState(const FSt
 	{
 		return EGameDNAInstallerPluginState::NotInstalled;
 	}
-	// Plugin installed but without installed SDK
-	else if (!SaveGameObject->PluginsRevisions.Contains(PluginId))
-	{
-		return EGameDNAInstallerPluginState::InstallSDK;
-	}
-	// Plugin installed with installed SDK
-	else
-	{
-		const FString& PluginVersion = Plugin->GetDescriptor().VersionName;
-		int32 PluginVersionNumeric = NumericVersionFromString(PluginVersion);
+    else
+    {
+        const FString& PluginVersion = Plugin->GetDescriptor().VersionName;
+        int32 PluginVersionNumeric = NumericVersionFromString(PluginVersion);
+        
+        TMap<int32, int32> VersionsMap;
+        
+        for (auto Version : Versions)
+        {
+            TSharedPtr<FJsonObject> VersionObject = Version->AsObject();
+            
+            if (VersionObject->HasField("minInstalled") && VersionObject->HasField("targetRevision"))
+            {
+                const FString& MinInstalled = VersionObject->GetStringField("minInstalled");
+                const int32 TargetRevision = VersionObject->GetNumberField("targetRevision");
+                int32 MinInstalledNumeric = NumericVersionFromString(MinInstalled);
+                VersionsMap.Add(MinInstalledNumeric, TargetRevision);
+            }
+        }
+        
+        int32 BestFoundVersion = 0;
+        for (auto& Version : VersionsMap)
+        {
+            if (Version.Key <= PluginVersionNumeric && Version.Key >= BestFoundVersion)
+            {
+                BestFoundVersion = Version.Key;
+            }
+        }
+        
+        // Not found compatible version
+        if(VersionsMap.Contains(BestFoundVersion))
+        {
+            OutRevision = VersionsMap[BestFoundVersion];
+        }
+        else
+        {
+            return EGameDNAInstallerPluginState::NotInstalled;
+        }
 
-		TMap<int32, int32> VersionsMap;
-
-		for (auto Version : Versions)
-		{
-			TSharedPtr<FJsonObject> VersionObject = Version->AsObject();
-
-			if (VersionObject->HasField("minInstalled") && VersionObject->HasField("targetRevision"))
-			{
-				const FString& MinInstalled = VersionObject->GetStringField("minInstalled");
-				const int32 TargetRevision = VersionObject->GetNumberField("targetRevision");
-				int32 MinInstalledNumeric = NumericVersionFromString(MinInstalled);
-				VersionsMap.Add(MinInstalledNumeric, TargetRevision);
-			}
-		}
-
-		int32 BestFoundVersion = 0;
-		for (auto& Version : VersionsMap)
-		{
-			if (Version.Key <= PluginVersionNumeric && Version.Key >= BestFoundVersion)
-			{
-				BestFoundVersion = Version.Key;
-			}
-		}
-
-		OutRevision = VersionsMap[BestFoundVersion];
-
-		// Update SDK
-		if (OutRevision > SaveGameObject->PluginsRevisions[PluginId])
-		{
-			return EGameDNAInstallerPluginState::UpdateSDK;
-		}
-		// SDK installed
-		else
-		{
-			return EGameDNAInstallerPluginState::Installed;
-		}
-	}
+        // Plugin installed but without installed SDK
+        if (!SaveGameObject->PluginsRevisions.Contains(PluginId))
+        {
+            return EGameDNAInstallerPluginState::InstallSDK;
+        }
+        // Plugin installed with installed SDK
+        else
+        {
+            // Update SDK
+            if (OutRevision > SaveGameObject->PluginsRevisions[PluginId])
+            {
+                return EGameDNAInstallerPluginState::UpdateSDK;
+            }
+            // SDK installed
+            else
+            {
+                return EGameDNAInstallerPluginState::Installed;
+            }
+        }
+    }
 
 	return EGameDNAInstallerPluginState::NotInstalled;
 }
