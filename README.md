@@ -32,6 +32,33 @@ More info about plugin and installation instructions you can find in [User Guide
 
     ![](Resources/Installation3.png)
 
-4. Now, the _gameDNA installer_ main window is visible and you can install or update SDKs for installed plugins in the engine and/or a project. Relax and enjoy. That's all!
+4. Android configuration:
+
+    a) Go to _Project Settings -> Platforms -> Android_ and change _Minimum SDK Version_ to 16 and _Target SDK Version_ to 25.
+    
+    b) Go to _Project Settings -> Platforms -> Android SDK_ and change _SDK API Level_ to _latest_ and _NDK API_ Level to _android-19_.
+    
+    c) Go to the _NVIDIA CodeWorks_ installation path and run _Android SDK Manager_.
+
+    You can find it typically in:
+
+    * Windows: _C:/NVPACK/android-sdk-windows/tools/android.bat_
+    * macOS: _/Users/[username]/NVPACK/android-sdk-macosx/tools/android_
+
+    Install or update the following libraries:
+
+    * Android 7.1.1 (API 25) SDK Platform
+    * Android Support Repository
+    * Android Support Library
+    * Google Play Services
+    * Google Repository
+
+5. Now, the _gameDNA installer_ main window is visible and you can install or update SDKs for installed plugins in the engine and/or a project. Relax and enjoy. That's all!
 
     ![](Resources/Installation4.png)
+
+6. If you experience the infamous _64k methods_ error, you should download and install the free *MultiDex* plugin: 
+    * GitHub: [https://github.com/gameDNAstudio/MultiDex](https://github.com/gameDNAstudio/MultiDex)
+    * Marketplace: [https://www.unrealengine.com/marketplace/multidex](https://www.unrealengine.com/marketplace/multidex)
+
+7. If you have any antivirus software installed on your computer, please add the following file to the whitelist: _[PLUGIN_FOLDER]/Extras/Core/gameDNAinstaller.exe_. The file is 100% safe but is not present in antivirus databases so it can be reported as a Trojan by some programs.
