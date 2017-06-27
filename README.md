@@ -14,6 +14,8 @@
 * No more downloading and creating packages on your own.
 * Just one click and it will do everything for you.
 * Out-of-the-box for Windows, macOS, and Linux.
+* Works with Blueprint-only & source code projects
+* Works with Launcher & GitHub UE4 versions
 
 ## User Guide
 More info about plugin and installation instructions you can find in [User Guide](Documentation/gameDNAinstaller_UserGuide.pdf).
