@@ -209,15 +209,7 @@ void FGameDNAinstallerCore::OnDownloadPluginsList(FHttpRequestPtr Request, FHttp
 					{
 						TArray<TSharedPtr<FJsonValue>> Versions = PluginObject->GetArrayField("versions");
 						PluginPtr->State = ProcessPluginState(PluginPtr->Id, Versions, SaveGameObject, PluginPtr->Revision);
-
-						if (PluginPtr->State == EGameDNAInstallerPluginState::Installed)
-						{
-							PluginPtr->ButtonCanBeEnabled = false;
-						}
-						else
-						{
-							PluginPtr->ButtonCanBeEnabled = true;
-						}
+						PluginPtr->ButtonCanBeEnabled = true;
 					}
 
 					PluginsList.Add(PluginPtr);

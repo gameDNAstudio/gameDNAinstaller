@@ -172,6 +172,7 @@ void SGameDNAinstallerConsole::OnPluginButtonClicked(TSharedRef<FGameDNAinstalle
 		UKismetSystemLibrary::LaunchURL(PluginEntry->Website);
 		break;
 	case EGameDNAInstallerPluginState::Installed:
+		bNeedInstallation = true;
 		break;
 	case EGameDNAInstallerPluginState::InstallSDK:
 		bNeedInstallation = true;

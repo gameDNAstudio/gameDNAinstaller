@@ -46,7 +46,7 @@ void SGameDNAinstallerPluginEntry::Construct(const FArguments& InArgs)
 			PluginButtonText->SetText(FString("Get it now"));
 			break;
 		case EGameDNAInstallerPluginState::Installed:
-			PluginButtonText->SetText(FString("Installed"));
+			PluginButtonText->SetText(FString("Reinstall"));
 			break;
 		case EGameDNAInstallerPluginState::InstallSDK:
 			PluginButtonText->SetText(FString("Install SDK"));
