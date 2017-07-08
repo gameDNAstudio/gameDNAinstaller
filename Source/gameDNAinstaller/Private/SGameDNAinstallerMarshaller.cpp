@@ -18,8 +18,8 @@ TSharedRef<FGameDNAinstallerTextLayoutMarshaller> FGameDNAinstallerTextLayoutMar
 }
 
 FGameDNAinstallerTextLayoutMarshaller::FGameDNAinstallerTextLayoutMarshaller()
-	: CachedNumMessages(0)
-	, TextLayout(nullptr)
+	: TextLayout(nullptr)
+	, CachedNumMessages(0)
 {
 }
 
