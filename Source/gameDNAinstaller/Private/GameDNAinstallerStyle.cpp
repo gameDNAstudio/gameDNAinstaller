@@ -5,6 +5,8 @@
 #include "GameDNAinstaller.h"
 #include "GameDNAinstallerStyle.h"
 #include "SlateGameResources.h"
+#include "Styling/SlateStyleRegistry.h"
+#include "Framework/Text/SlateTextRun.h"
 #include "IPluginManager.h"
 
 TSharedPtr<FSlateStyleSet> FGameDNAinstallerStyle::StyleInstance = NULL;

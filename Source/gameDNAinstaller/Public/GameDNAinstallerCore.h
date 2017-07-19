@@ -4,13 +4,12 @@
 
 #pragma once
 
-#include "EngineMinimal.h"
 #include "CoreMinimal.h"
 #include "GameDNAinstallerTypes.h"
 #include "HttpModule.h"
 #include "IHttpRequest.h"
 #include "IHttpResponse.h"
-#include "GameDNAinstallerSave.h"
+#include "Dom/JsonValue.h"
 
 class FGameDNAinstallerCore
 {
@@ -53,7 +52,7 @@ private:
 	void OnDownloadPluginsList(FHttpRequestPtr Request, FHttpResponsePtr Response, bool bWasSuccessful);
 
 	/** Process Plugin State */
-	EGameDNAInstallerPluginState ProcessPluginState(const FString& PluginId, const TArray<TSharedPtr<FJsonValue>>& Versions, UGameDNAinstallerSave* SaveGameObject, int32& OutRevision);
+	EGameDNAInstallerPluginState ProcessPluginState(const FString& PluginId, const TArray<TSharedPtr<FJsonValue>>& Versions, class UGameDNAinstallerSave* SaveGameObject, int32& OutRevision);
 
 	/** Plugins List */
 	TArray<TSharedPtr<FGameDNAinstallerPlugin>> PluginsList;
@@ -71,5 +70,5 @@ private:
 	uint32 NumericVersionFromString(const FString& StringVersion);
 
 	/** Load Save Game Object */
-	UGameDNAinstallerSave* LoadSaveGameObject();
+	class UGameDNAinstallerSave* LoadSaveGameObject();
 };

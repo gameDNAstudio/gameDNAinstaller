@@ -4,7 +4,6 @@
 
 #pragma once
 
-#include "EngineMinimal.h"
 #include "CoreMinimal.h"
 #include "GameDNAinstaller.h"
 #include "GameFramework/SaveGame.h"
