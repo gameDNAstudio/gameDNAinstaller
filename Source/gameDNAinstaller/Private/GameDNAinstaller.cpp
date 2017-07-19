@@ -5,7 +5,7 @@
 #include "GameDNAinstaller.h"
 #include "UIAction.h"
 #include "LevelEditor.h"
-#include "UnrealEd.h"
+#include "Kismet/GameplayStatics.h"
 #include "Editor/WorkspaceMenuStructure/Public/WorkspaceMenuStructure.h"
 #include "Editor/WorkspaceMenuStructure/Public/WorkspaceMenuStructureModule.h"
 #include "Widgets/Docking/SDockTab.h"

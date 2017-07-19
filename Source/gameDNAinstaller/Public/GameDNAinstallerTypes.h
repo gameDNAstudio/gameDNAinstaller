@@ -4,7 +4,6 @@
 
 #pragma once
 
-#include "EngineMinimal.h"
 #include "CoreMinimal.h"
 
 DECLARE_DELEGATE_OneParam(FOnGameDNAinstallerPluginButtonClicked, TSharedRef<struct FGameDNAinstallerPlugin>);

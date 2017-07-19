@@ -4,7 +4,6 @@
 
 #pragma once
 
-#include "SlateBasics.h"
 #include "BaseTextLayoutMarshaller.h"
 #include "GameDNAinstallerTypes.h"
 #include "TextLayout.h"

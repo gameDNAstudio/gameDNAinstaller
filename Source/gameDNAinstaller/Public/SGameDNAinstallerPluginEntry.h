@@ -4,7 +4,6 @@
 
 #pragma once
 
-#include "SlateBasics.h"
 #include "GameDNAinstallerTypes.h"
 
 class SGameDNAinstallerPluginEntry : public SCompoundWidget

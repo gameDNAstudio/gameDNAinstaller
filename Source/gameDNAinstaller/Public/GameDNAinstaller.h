@@ -5,7 +5,6 @@
 #pragma once
 
 #include "ModuleManager.h"
-#include "EngineMinimal.h"
 #include "CoreMinimal.h"
 #include "GameDNAinstallerCore.h"
 

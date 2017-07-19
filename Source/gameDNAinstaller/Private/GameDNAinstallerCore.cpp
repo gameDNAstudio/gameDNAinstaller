@@ -5,7 +5,16 @@
 #include "GameDNAinstaller.h"
 #include "GameDNAinstallerCore.h"
 #include "IPluginManager.h"
-#include "Json.h"
+#include "GameDNAinstallerSave.h"
+
+#include "Dom/JsonValue.h"
+#include "Dom/JsonObject.h"
+
+#include "Serialization/JsonReader.h"
+#include "Serialization/JsonWriter.h"
+#include "Serialization/JsonSerializer.h"
+
+#include "Misc/MonitoredProcess.h"
 
 #define LOCTEXT_NAMESPACE "gameDNAinstallerModule"
 
