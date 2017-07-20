@@ -2,8 +2,8 @@
 // Created by Patryk Stepniewski
 // Copyright (c) 2014-2017 gameDNA Ltd. All Rights Reserved.
 
-#include "GameDNAinstaller.h"
 #include "GameDNAinstallerSave.h"
+#include "GameDNAinstaller.h"
 
 UGameDNAinstallerSave::UGameDNAinstallerSave(const FObjectInitializer& ObjectInitializer)
 	: Super(ObjectInitializer)
