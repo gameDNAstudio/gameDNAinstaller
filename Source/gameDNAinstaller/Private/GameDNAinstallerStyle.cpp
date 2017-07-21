@@ -3,7 +3,6 @@
 // Copyright (c) 2014-2017 gameDNA Ltd. All Rights Reserved.
 
 #include "GameDNAinstallerStyle.h"
-#include "GameDNAinstaller.h"
 #include "SlateGameResources.h"
 #include "Styling/SlateStyleRegistry.h"
 #include "Framework/Text/SlateTextRun.h"

@@ -3,7 +3,6 @@
 // Copyright (c) 2014-2017 gameDNA Ltd. All Rights Reserved.
 
 #include "GameDNAinstallerCommands.h"
-#include "GameDNAinstaller.h"
 
 #define LOCTEXT_NAMESPACE "gameDNAinstallerModule"
 

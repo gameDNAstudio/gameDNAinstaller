@@ -7,7 +7,9 @@ namespace UnrealBuildTool.Rules
 	public class gameDNAinstaller : ModuleRules
 	{
 		public gameDNAinstaller(ReadOnlyTargetRules Target) : base(Target)
-		{	
+		{
+			PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
+
 			PrivateIncludePaths.AddRange(new string[] { "gameDNAinstaller/Private" });
 
 			PublicDependencyModuleNames.AddRange(new string[]{ "Core", "Projects" });

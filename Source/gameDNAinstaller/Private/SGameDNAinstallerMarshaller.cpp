@@ -3,7 +3,6 @@
 // Copyright (c) 2014-2017 gameDNA Ltd. All Rights Reserved.
 
 #include "SGameDNAinstallerMarshaller.h"
-#include "GameDNAinstaller.h"
 #include "EditorStyleSet.h"
 #include "Editor.h"
 #include "Text.h"

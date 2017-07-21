@@ -3,7 +3,6 @@
 // Copyright (c) 2014-2017 gameDNA Ltd. All Rights Reserved.
 
 #include "GameDNAinstallerCore.h"
-#include "GameDNAinstaller.h"
 #include "IPluginManager.h"
 #include "GameDNAinstallerSave.h"
 
