@@ -116,7 +116,7 @@ TSharedRef<FSlateStyleSet> FGameDNAinstallerStyle::Create()
 
 void FGameDNAinstallerStyle::ReloadTextures()
 {
-	if ( FSlateApplication::IsInitialized() && FSlateApplication::Get().GetRenderer().IsValid() )
+	if ( FSlateApplication::IsInitialized() && FSlateApplication::Get().GetRenderer() )
 	{
 		FSlateApplication::Get().GetRenderer()->ReloadTextureResources();
 	}
