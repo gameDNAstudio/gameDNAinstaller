@@ -1,7 +1,7 @@
 {
   "FileVersion": 3,
   "Version": 1,
-  "VersionName": "1.1.0",
+  "VersionName": "1.2.0",
   "FriendlyName": "gameDNA installer",
   "Description": "SDK installer for gameDNA's plugins",
   "Category": "Misc",
@@ -9,7 +9,7 @@
   "CreatedByURL": "http://gamednastudio.com",
   "DocsURL": "http://gamednastudio.com/plugins/docs/gameDNAinstaller_UserGuide.pdf",
   "MarketplaceURL": "",
-  "EngineVersion": "4.17.0",
+  "EngineVersion": "4.18.0",
   "SupportURL": "mailto:support@gamednastudio.com",
   "Modules": [
 	  {
