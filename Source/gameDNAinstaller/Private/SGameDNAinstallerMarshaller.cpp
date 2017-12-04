@@ -6,7 +6,6 @@
 #include "EditorStyleSet.h"
 #include "Editor.h"
 #include "Text.h"
-#include "StringAssetReference.h"
 #include "GameDNAinstallerStyle.h"
 #include "SlateStructs.h"
 

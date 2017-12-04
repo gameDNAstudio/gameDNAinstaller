@@ -7,7 +7,6 @@
 #include "Editor.h"
 #include "Text.h"
 #include "Engine/StreamableManager.h"
-#include "StringAssetReference.h"
 #include "GameDNAinstallerStyle.h"
 #include "SlateStructs.h"
 #include "Runtime/Engine/Classes/Kismet/KismetSystemLibrary.h"
