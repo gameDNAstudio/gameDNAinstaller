@@ -97,7 +97,7 @@ void SGameDNAinstallerConsole::Construct(const FArguments& InArgs)
 				.AutoWidth()
 				[
 					SNew(STextBlock)
-					.Text(FText::FromString("Copyright (c) 2014-2017 "))
+					.Text(FText::FromString("Copyright (c) 2014-2018 "))
 					.TextStyle(FGameDNAinstallerStyle::Get(), "gameDNAinstaller.MainTextStyle")
 				]
 				+SHorizontalBox::Slot()
