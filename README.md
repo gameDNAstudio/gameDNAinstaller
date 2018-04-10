@@ -34,7 +34,7 @@ More info about plugin and installation instructions you can find in [User Guide
 
 4. Android configuration:
 
-    a) Go to _Project Settings -> Platforms -> Android_ and change _Minimum SDK Version_ to 16 and _Target SDK Version_ to 25.
+    a) Go to _Project Settings -> Platforms -> Android_ and change _Minimum SDK Version_ to 16 and _Target SDK Version_ to 27.
     
     b) Go to _Project Settings -> Platforms -> Android SDK_ and change _SDK API Level_ to _latest_ and _NDK API_ Level to _android-19_.
     
@@ -47,7 +47,7 @@ More info about plugin and installation instructions you can find in [User Guide
 
     Install or update the following libraries:
 
-    * Android 7.1.1 (API 25) SDK Platform
+    * Android 8.1.0 (API 27) SDK Platform
     * Android Support Repository
     * Android Support Library
     * Google Play Services
