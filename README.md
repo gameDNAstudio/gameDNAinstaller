@@ -4,9 +4,9 @@
 
 **gameDNA installer** is an automatic SDK downloader and installer for gameDNA's plugins. No more downloading SDKs and creating packages on your own! Just one click and it will do everything for you!
 
-* **Current version:** 1.3.0
-* **Binaries compiled for:** Unreal Engine 4.19
-* **Required Unreal Engine 4.19 or above.**
+* **Current version:** 1.4.0
+* **Binaries compiled for:** Unreal Engine 4.20
+* **Required Unreal Engine 4.20 or above.**
 
 ## Features
 * Automatic SDK downloader and installer.
