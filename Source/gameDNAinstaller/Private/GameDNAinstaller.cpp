@@ -3,7 +3,7 @@
 // Copyright (c) 2014-2018 gameDNA Ltd. All Rights Reserved.
 
 #include "GameDNAinstaller.h"
-#include "UIAction.h"
+#include "Runtime/Slate/Public/Framework/Commands/UIAction.h"
 #include "LevelEditor.h"
 #include "Kismet/GameplayStatics.h"
 #include "Editor/WorkspaceMenuStructure/Public/WorkspaceMenuStructure.h"

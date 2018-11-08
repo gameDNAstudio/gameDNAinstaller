@@ -3,16 +3,16 @@
 // Copyright (c) 2014-2018 gameDNA Ltd. All Rights Reserved.
 
 #include "SGameDNAinstallerConsole.h"
-#include "EditorStyleSet.h"
+#include "Editor/EditorStyle/Public/EditorStyleSet.h"
 #include "Editor.h"
-#include "Text.h"
+#include "Runtime/Core/Public/Internationalization/Text.h"
 #include "Engine/StreamableManager.h"
 #include "GameDNAinstallerStyle.h"
-#include "SlateStructs.h"
+#include "Runtime/SlateCore/Public/Types/SlateStructs.h"
 #include "Runtime/Engine/Classes/Kismet/KismetSystemLibrary.h"
 #include "SGameDNAinstallerPluginEntry.h"
 #include "Widgets/Layout/SConstraintCanvas.h"
-#include "SHyperlink.h"
+#include "Runtime/Slate/Public/Widgets/Input/SHyperlink.h"
 
 void SGameDNAinstallerConsole::Construct(const FArguments& InArgs)
 {

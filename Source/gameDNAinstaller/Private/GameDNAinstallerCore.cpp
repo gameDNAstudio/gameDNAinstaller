@@ -3,7 +3,7 @@
 // Copyright (c) 2014-2018 gameDNA Ltd. All Rights Reserved.
 
 #include "GameDNAinstallerCore.h"
-#include "IPluginManager.h"
+#include "Runtime/Projects/Public/Interfaces/IPluginManager.h"
 #include "GameDNAinstallerSave.h"
 
 #include "Dom/JsonValue.h"

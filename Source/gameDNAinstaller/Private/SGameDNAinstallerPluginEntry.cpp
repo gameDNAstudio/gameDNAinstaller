@@ -6,9 +6,9 @@
 #include "SGameDNAinstallerConsole.h"
 #include "EditorStyleSet.h"
 #include "Editor.h"
-#include "Text.h"
+#include "Runtime/Core/Public/Internationalization/Text.h"
 #include "GameDNAinstallerStyle.h"
-#include "SlateStructs.h"
+#include "Runtime/SlateCore/Public/Types/SlateStructs.h"
 
 void SGameDNAinstallerPluginEntry::Construct(const FArguments& InArgs)
 {		

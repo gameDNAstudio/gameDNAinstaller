@@ -3,10 +3,10 @@
 // Copyright (c) 2014-2018 gameDNA Ltd. All Rights Reserved.
 
 #include "GameDNAinstallerStyle.h"
-#include "SlateGameResources.h"
+#include "Runtime/Engine/Public/Slate/SlateGameResources.h"
 #include "Styling/SlateStyleRegistry.h"
 #include "Framework/Text/SlateTextRun.h"
-#include "IPluginManager.h"
+#include "Runtime/Projects/Public/Interfaces/IPluginManager.h"
 
 TSharedPtr<FSlateStyleSet> FGameDNAinstallerStyle::StyleInstance = NULL;
 
