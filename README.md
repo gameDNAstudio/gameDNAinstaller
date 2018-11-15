@@ -56,9 +56,11 @@ More info about plugin and installation instructions you can find in [User Guide
 5. Now, the _gameDNA installer_ main window is visible and you can install or update SDKs for installed plugins in the engine and/or a project. Relax and enjoy. That's all!
 
     ![](Resources/Installation4.png)
+    
+6. If you experience TLS certificate error on macOS, please update mono to the newest version: [https://www.mono-project.com/docs/getting-started/install/mac/](https://www.mono-project.com/docs/getting-started/install/mac/)
 
-6. If you experience the infamous _64k methods_ error, you should download and install the free *MultiDex* plugin: 
+7. If you experience the infamous _64k methods_ error, you should download and install the free *MultiDex* plugin: 
     * GitHub: [https://github.com/gameDNAstudio/MultiDex](https://github.com/gameDNAstudio/MultiDex)
     * Marketplace: [https://www.unrealengine.com/marketplace/multidex](https://www.unrealengine.com/marketplace/multidex)
 
-7. If you have any antivirus software installed on your computer, please add the following file to the whitelist: _[PLUGIN_FOLDER]/Extras/Core/gameDNAinstaller.exe_. The file is 100% safe but is not present in antivirus databases so it can be reported as a Trojan by some programs.
+8. If you have any antivirus software installed on your computer, please add the following file to the whitelist: _[PLUGIN_FOLDER]/Extras/Core/gameDNAinstaller.exe_. The file is 100% safe but is not present in antivirus databases so it can be reported as a Trojan by some programs.
