@@ -1,6 +1,6 @@
 // gameDNA installer
 // Created by Patryk Stepniewski
-// Copyright (c) 2014-2018 gameDNA Ltd. All Rights Reserved.
+// Copyright (c) 2014-2019 gameDNA Ltd. All Rights Reserved.
 
 #include "SGameDNAinstallerConsole.h"
 #include "Editor/EditorStyle/Public/EditorStyleSet.h"
@@ -97,7 +97,7 @@ void SGameDNAinstallerConsole::Construct(const FArguments& InArgs)
 				.AutoWidth()
 				[
 					SNew(STextBlock)
-					.Text(FText::FromString("Copyright (c) 2014-2018 "))
+					.Text(FText::FromString("Copyright (c) 2014-2019 "))
 					.TextStyle(FGameDNAinstallerStyle::Get(), "gameDNAinstaller.MainTextStyle")
 				]
 				+SHorizontalBox::Slot()
