@@ -9,8 +9,9 @@ namespace UnrealBuildTool.Rules
 		public gameDNAinstaller(ReadOnlyTargetRules Target) : base(Target)
 		{
 			PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
+            PrecompileForTargets = PrecompileTargetsType.Any;
 
-			PrivateIncludePaths.AddRange(new string[] { "gameDNAinstaller/Private" });
+            PrivateIncludePaths.AddRange(new string[] { "gameDNAinstaller/Private" });
 
 			PublicDependencyModuleNames.AddRange(new string[]{ "Core", "Projects" });
 
